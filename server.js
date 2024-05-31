@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://192.168.100.4:3000", // Replace with your local IP address
+    origin: "https://arduino-frontend-4c8ab85ba560.herokuapp.com/", // Replace with your local IP address
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   }
